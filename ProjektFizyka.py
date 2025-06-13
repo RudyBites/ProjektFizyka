@@ -100,7 +100,7 @@ def fire(event):
             traj_x.append(pos[0])
             traj_y.append(pos[1])
 
-            # Zakończenie, jeśli blisko punktu startowego
+
             if frame > 100 and np.linalg.norm(pos - np.array([0.0, R + height])) < 1e4:
                 ani.event_source.stop()
                 point_dot.set_data([], [])
